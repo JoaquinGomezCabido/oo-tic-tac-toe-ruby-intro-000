@@ -11,6 +11,11 @@ class TicTacToe
     [6,4,2]
   ]
 
+  def input_to_index(input)
+    index = input.to_i - 1
+    return index
+  end
+
   def initialize()
     @board = Array.new(9, " ")
   end
